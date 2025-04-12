@@ -11,7 +11,7 @@ export default function Logo() {
             <span className="relative">
               <span className="absolute -top-3 -left-3 w-8 h-8">
                 <Image 
-                  src="/icon.svg" 
+                  src="/icons/icon.svg" 
                   alt="Wizard hat" 
                   width={32} 
                   height={32} 

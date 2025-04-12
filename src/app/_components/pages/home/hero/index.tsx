@@ -109,7 +109,7 @@ export default function Hero() {
             <span className="text-blue-400">POWERED BY</span>
             <span className="text-white font-semibold">GBU</span>
             <Image 
-              src="/gbu.svg" 
+              src="/icons/gbu.svg" 
               alt="GBU Logo" 
               width={24} 
               height={12}

@@ -1,8 +1,9 @@
 'use client'
-import { navItems } from "@/config/nav-items";
-import SocialIcons from "./social-icons";
-import { useEffect } from "react";
-import { X, ChevronRight } from "lucide-react";
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { X, ChevronRight } from 'lucide-react';
+import { navItems } from '@/config/nav-items';
+import SocialIcons from './social-icons';
 
 type MobileMenuProps = {
   isMenuOpen: boolean;
@@ -19,6 +20,8 @@ export default function MobileMenu({
   setActiveSection, 
   setIsMenuOpen 
 }: MobileMenuProps) {
+  const router = useRouter();
+
   // Lock body scroll when menu is open
   useEffect(() => {
     if (isMenuOpen) {
@@ -35,17 +38,34 @@ export default function MobileMenu({
     };
   }, [isMenuOpen]);
 
+  const handleNavigation = (e: React.MouseEvent, path: string, label: string) => {
+    e.preventDefault();
+    setActiveSection(label);
+    setIsMenuOpen(false);
+    
+    // Handle hash links for scrolling
+    if (path.startsWith('#')) {
+      setTimeout(() => {
+        const element = document.getElementById(path.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 300); // Small delay to allow menu to close
+    } else {
+      // Handle regular page navigation
+      router.push(path);
+    }
+  };
+
   return (
     <div 
       className={`md:hidden fixed inset-0 bg-black/90 backdrop-blur-xl z-50 transition-all duration-400 ease-in-out ${
         isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
       }`}
     >
-      {/* Subtle background gradient that won't cause a white line */}
       <div className="absolute inset-0 bg-gradient-to-b from-black to-black/95 pointer-events-none"></div>
       
       <div className="relative h-full flex flex-col p-6">
-        {/* Close button */}
         <div className="flex justify-end mb-6">
           <button
             onClick={() => setIsMenuOpen(false)}
@@ -56,7 +76,6 @@ export default function MobileMenu({
           </button>
         </div>
         
-        {/* Menu items */}
         <div className="flex-1 flex flex-col items-center justify-center py-4 space-y-6">
           {navItems.map((item, idx) => {
             const isActive = activeSection === item.label;
@@ -73,12 +92,8 @@ export default function MobileMenu({
                 }}
               >
                 <a 
-                  href={item.href}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setActiveSection(item.label);
-                    setIsMenuOpen(false);
-                  }}
+                  href={item.path}
+                  onClick={(e) => handleNavigation(e, item.path, item.label)}
                   className={`flex justify-center items-center px-4 py-4 text-lg font-medium transition-all duration-300 ${
                     isActive 
                       ? 'text-white' 
@@ -93,7 +108,6 @@ export default function MobileMenu({
           })}
         </div>
         
-        {/* Social icons in mobile menu - centered layout */}
         <div 
           className="flex items-center justify-center gap-8 px-4 py-6 border-t border-white/10 mt-auto"
           style={{

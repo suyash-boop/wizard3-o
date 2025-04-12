@@ -5,8 +5,9 @@ export default function HomePage() {
     return(
         <div>
             <Hero />
-            <AboutSection />
-            {/* Other sections can go here */}
+            <div id="about">
+                <AboutSection/>
+            </div>
         </div>
     )
 }

@@ -13,7 +13,6 @@ export default function Footer() {
       {/* Grid pattern overlay */}
       <div className="absolute inset-0 opacity-5" 
         style={{ 
-          backgroundImage: 'url(/grid-pattern.svg)',
           backgroundSize: '100px 100px'
         }} 
       />

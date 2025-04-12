@@ -1,26 +1,17 @@
 'use client'
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
+import { LoginButton } from "@/components/auth/login-button"
 
-export default function LoginButton() {
-  const [isLoading, setIsLoading] = useState(false)
-
-  const handleLogin = () => {
-    setIsLoading(true)
-    setTimeout(() => {
-      setIsLoading(false)
-      window.location.href = "/login"
-    }, 1000)
-  }
-
+export default function NavbarLoginButton() {
   return (
-    <Button 
-      onClick={handleLogin}
-      disabled={isLoading}
-      variant="outline"
-      size="default"
-    >
-      {isLoading ? "Connecting..." : "Login"}
-    </Button>
+    <LoginButton mode="modal">
+      <Button 
+        variant="outline"
+        size="default"
+        className="bg-black/50 border-white/10 text-white hover:text-gray-200 hover:bg-zinc-800/80 hover:border-white/30 backdrop-blur-sm transition-all duration-300"
+      >
+        Login
+      </Button>
+    </LoginButton>
   )
 }

@@ -12,7 +12,7 @@ export default function AboutSection() {
   return (
     <section className="py-24 relative overflow-hidden bg-black">
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[url('/grid.svg')] bg-repeat opacity-10" />
+        <div className="absolute inset-0 bg-repeat opacity-10" />
         
         <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-900/30 via-black to-purple-900/30" />
