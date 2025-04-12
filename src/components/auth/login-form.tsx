@@ -12,15 +12,8 @@ export function LoginForm() {
   const router = useRouter()
   const [isLoading, setIsLoading] = useState(false)
 
-  const handleSocialLogin = (provider: string) => {
-    setIsLoading(true)
-    console.log(`Logging in with ${provider}`)
-    setTimeout(() => {
-      setIsLoading(false)
-      router.push("/")
-    }, 1500)
-  }
-
+  // Remove the old handleSocialLogin since it's now handled in SocialButtons component
+  
   return (
     <div className="w-full flex justify-center items-center min-h-[80vh]">
       <Card className="w-full max-w-md shadow-xl border border-white/5 bg-[#0A0A0F] backdrop-blur-xl relative overflow-hidden rounded-xl">
@@ -51,7 +44,7 @@ export function LoginForm() {
                 exit={{ opacity: 0 }}
                 className="space-y-6"
               >
-                <SocialButtons onSocialLogin={handleSocialLogin} isLoading={isLoading} />
+                <SocialButtons isLoading={isLoading} />
               </motion.div>
             </AnimatePresence>
           </CardContent>

@@ -25,6 +25,7 @@ export const teamMembers: TeamMember[] = [
     name: "Sam",
     role: "Backend Engineer",
     bio: "Database wizard who once optimized a query so well, the database sent a thank you note. Speaks fluent SQL in his sleep.",
+    image: "/devansh.jpg",
     skills: ["Python", "Django", "PostgreSQL", "Docker"],
     superpower: "Database Bender",
     catchphrase: "SELECT * FROM solutions WHERE problem = current_issue;"
@@ -34,6 +35,7 @@ export const teamMembers: TeamMember[] = [
     name: "Jordan",
     role: "AI/ML Specialist",
     bio: "Taught an AI to write poetry, solve complex math, and make the perfect cup of coffee. The machines spare him when they take over.",
+    image: "/aditya.jpg",
     skills: ["TensorFlow", "PyTorch", "NLP", "Computer Vision"],
     superpower: "Neural Network Whisperer",
     catchphrase: "My neural nets are deeper than your philosophy."
@@ -43,6 +45,7 @@ export const teamMembers: TeamMember[] = [
     name: "Taylor",
     role: "DevOps Engineer",
     bio: "Infrastructure maestro who deploys to production on Fridays and lives to tell the tale. Kubernetes clusters follow him like pets.",
+    image: "/dhruv.jpg",
     skills: ["Kubernetes", "AWS", "CI/CD", "Terraform"],
     superpower: "Cloud Commander",
     catchphrase: "Have you tried turning it off and on again?"

@@ -40,9 +40,9 @@ export default function Hero() {
   // Updated team members data with Suyash
   const teamMembers = [
     { id: 1, name: "Suyash", role: "Lead Developer", image: "/suyash.jpg" },
-    { id: 2, name: "Sam", role: "Backend" },
-    { id: 3, name: "Jordan", role: "AI/ML" },
-    { id: 4, name: "Taylor", role: "DevOps" },
+    { id: 2, name: "Sam", role: "Backend", image: "/devansh.jpg"},
+    { id: 3, name: "Jordan", role: "AI/ML", image: "/aditya.jpg" },
+    { id: 4, name: "Taylor", role: "DevOps", image: "/dhruv.jpg" },
   ]
   
   return (
