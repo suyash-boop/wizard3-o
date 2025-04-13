@@ -48,8 +48,6 @@ This project is a blend of aesthetics and performance — built with cutting-edg
 - 🔐 **OAuth Login**  
   GitHub and Discord authentication with session management.
 
-- 🤖 **Built-in ChatBot**  
-  Real-time chatbot powered by AI to answer user queries.
 
 - 📬 **Newsletter Integration**  
   Functional sign-up form to capture emails and build a dev audience.
@@ -61,6 +59,9 @@ This project is a blend of aesthetics and performance — built with cutting-edg
 - 🧼 **Clean, Scalable Codebase**  
   Modular folder structure, reusable components, and clean logic — optimized for scalability and collaboration.
 
+## Upcoming Feature
+- 🤖 **Built-in ChatBot**  
+  Real-time chatbot powered by AI to answer user queries.
 ---
 
 ## 🛠 Tech Stack
