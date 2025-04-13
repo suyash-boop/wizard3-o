@@ -113,7 +113,7 @@ export default function AboutUsPage() {
                   {member.name === "Suyash" && (
                     <>
                       <a 
-                        href="https://github.com/suyash-purwar"
+                        href="https://github.com/suyash-boop"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-blue-400 transition-colors cursor-pointer z-50"
@@ -121,7 +121,7 @@ export default function AboutUsPage() {
                         <FaGithub className="w-5 h-5" />
                       </a>
                       <a 
-                        href="https://linkedin.com/in/suyash-purwar"
+                        href="https://www.linkedin.com/in/suyash-padole-232b412ba/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-blue-400 transition-colors cursor-pointer z-50"
@@ -129,7 +129,7 @@ export default function AboutUsPage() {
                         <FaLinkedin className="w-5 h-5" />
                       </a>
                       <a 
-                        href="https://instagram.com/suyashpurwar"
+                        href="https://instagram.com/suyash__xd"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-blue-400 transition-colors cursor-pointer z-50"
@@ -141,7 +141,7 @@ export default function AboutUsPage() {
                   {member.name === "Devansh" && (
                     <>
                       <a 
-                        href="https://github.com/devansh"
+                        href="https://github.com/DevanshG0el"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-blue-400 transition-colors"
@@ -149,7 +149,7 @@ export default function AboutUsPage() {
                         <FaGithub className="w-5 h-5" />
                       </a>
                       <a 
-                        href="https://linkedin.com/in/devansh"
+                        href="https://www.linkedin.com/in/devansh-goel-828983301/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-blue-400 transition-colors"
@@ -157,7 +157,7 @@ export default function AboutUsPage() {
                         <FaLinkedin className="w-5 h-5" />
                       </a>
                       <a 
-                        href="https://instagram.com/devansh"
+                        href="https://www.instagram.com/devansh_goel02/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-blue-400 transition-colors"
@@ -166,7 +166,62 @@ export default function AboutUsPage() {
                       </a>
                     </>
                   )}
-                  {/* Add similar blocks for Aditya and Dhruv */}
+                  {member.name === "Aditya" && (
+                    <>
+                      <a 
+                        href="https://github.com/adityabharde"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-blue-400 transition-colors"
+                      >
+                        <FaGithub className="w-5 h-5" />
+                      </a>
+                      <a 
+                        href="https://www.linkedin.com/in/aditya-bharde-0a297332b/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-blue-400 transition-colors"
+                      >
+                        <FaLinkedin className="w-5 h-5" />
+                      </a>
+                      <a 
+                        href="https://www.instagram.com/aditya_bharde21/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-blue-400 transition-colors"
+                      >
+                        <FaInstagram className="w-5 h-5" />
+                      </a>
+                    </>
+                  )}
+                  {member.name === "Dhruv" && (
+                    <>
+                      <a 
+                        href="https://github.com/Dhruv-117/Dhruv-117"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-blue-400 transition-colors"
+                      >
+                        <FaGithub className="w-5 h-5" />
+                      </a>
+                      <a 
+                        href="https://www.linkedin.com/in/dhruv-khodke-a469a3243/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-blue-400 transition-colors"
+                      >
+                        <FaLinkedin className="w-5 h-5" />
+                      </a>
+                      <a 
+                        href="https://www.instagram.com/dhruvkhodke/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-blue-400 transition-colors"
+                      >
+                        <FaInstagram className="w-5 h-5" />
+                      </a>
+                    </>
+                  )}
                 </div>
 
                 {/* Superpower and Catchphrase */}
