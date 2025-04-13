@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://github.com/suyash-boop/wizard3-o" target="_blank">
-    <img src="logo.jpeg" width="300" height="100" alt="Evil Geniuses Logo">
+    <img src="images/logo.jpeg" width="300" height="100" alt="Evil Geniuses Logo">
   </a>
 </div>
 
@@ -17,14 +17,14 @@ This isn't just a portfolio — it's where creativity meets clean code.
 
 ## 🔗 Live Demo
 
-Check out the live version here: [evilgeniuses.dev](https://evilgeniuses.dev)  
+Check out the live version here: [wizard3-o.vercel.app](wizard3-o.vercel.app)  
 _(Replace with your actual URL)_
 
 ---
 
 ## 🎥 Preview
 
-![Website Preview](preview.gif)  
+![Website Preview](images/preview,jpeg)  
 _(Or use screenshots if GIF not available)_
 
 ---
