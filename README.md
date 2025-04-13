@@ -1,36 +1,117 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 Evil Geniuses
 
-## Getting Started
+<div align="center">
+  <a href="https://github.com/suyash-boop/wizard3-o" target="_blank">
+    <img src="logo.jpeg" width="300" height="100" alt="Evil Geniuses Logo">
+  </a>
+</div>
 
-First, run the development server:
+<h2 align="center">A Portfolio Website by a Team of 4 Developers</h2>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<p align="center">
+A collaborative digital space to showcase our skills, projects, and passion for building.  
+This isn't just a portfolio — it's where creativity meets clean code.
+</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔗 Live Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Check out the live version here: [evilgeniuses.dev](https://evilgeniuses.dev)  
+_(Replace with your actual URL)_
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🎥 Preview
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Website Preview](preview.gif)  
+_(Or use screenshots if GIF not available)_
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🚀 About the Project
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Evil Geniuses** is a modern portfolio website built by a team of four passionate developers.  
+It serves as a collective showcase of our technical skills, team projects, and shared enthusiasm for design and development.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is a blend of aesthetics and performance — built with cutting-edge tech, animated transitions, and real-time integrations.
+
+---
+
+## ✨ Features
+
+- ⚡ **Sleek & Responsive UI**  
+  Built using **Next.js**, styled with **Shadcn/UI** and **@ey** — fully responsive across all devices.
+
+- 🎨 **Creative Dev Vibe**  
+  Visually bold and animated — smooth transitions, interactive layouts, and a touch of personality.
+
+- 🔐 **OAuth Login**  
+  GitHub and Discord authentication with session management.
+
+- 🤖 **Built-in ChatBot**  
+  Real-time chatbot powered by AI to answer user queries.
+
+- 📬 **Newsletter Integration**  
+  Functional sign-up form to capture emails and build a dev audience.
+
+- 📨 **Contact Us Form**  
+  Sleek and functional contact form for visitors to connect with us directly.  
+  The data of the contact form is sent to our Discord server via Webhooks: [Join Discord Server](https://discord.gg/bxnAezT4fK)
+
+- 🧼 **Clean, Scalable Codebase**  
+  Modular folder structure, reusable components, and clean logic — optimized for scalability and collaboration.
+
+---
+
+## 🛠 Tech Stack
+
+**Frontend:**  
+- [Next.js](https://nextjs.org/)  
+- [React.js](https://reactjs.org/)  
+- [Shadcn/UI](https://ui.shadcn.com/)  
+- [Tailwind CSS](https://tailwindcss.com/)
+
+**Backend:**  
+- [MongoDB](https://www.mongodb.com/)  
+- [Prisma ORM](https://www.prisma.io/)  
+- [Better Auth / NextAuth](https://next-auth.js.org/)
+
+**Deployment:**  
+- [Vercel](https://vercel.com/)
+
+**Version Control:**  
+- Git & GitHub
+
+---
+
+## 👥 Team Evil Geniuses
+
+- 🧠 [Suyash Padole](https://github.com/suyash-boop)
+- 🚀 [Dhruv Khodke](https://github.com/Dhruv-117)
+- 💡 [Aditya Bharde](https://github.com/AdityaBharde)
+- 🔥 [Devansh Goel](https://github.com/goelDev)
+
+---
+
+### 🎓 Mentored by GDG RBU
+
+---
+
+## 🤝 Contributions
+
+We welcome contributions!  
+Feel free to fork this repo, submit pull requests, or open issues to collaborate with us.
+
+---
+
+## ⭐ Liked it?
+
+Hope you liked this project!  
+Don’t forget to give it a star ⭐
+
+---
+
+> _“Inspired by creativity. Driven by code. Powered by teamwork.”_
+
+---
