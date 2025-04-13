@@ -24,7 +24,7 @@ _(Replace with your actual URL)_
 
 ## 🎥 Preview
 
-![Website Preview](images/preview,jpeg)  
+![Website Preview](images/preview.jpeg)  
 _(Or use screenshots if GIF not available)_
 
 ---
