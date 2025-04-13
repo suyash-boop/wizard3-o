@@ -48,32 +48,35 @@ export default function Footer() {
       />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 mb-12">
           {/* Logo and description */}
-          <div className="col-span-1 md:col-span-1">
-            <Logo />
-            <p className="mt-4 text-sm text-white/60 max-w-xs">
-            A collective of four brilliant developers from RBU pushing the boundaries of what's possible in software development. We turn complex problems into elegant solutions.            </p>
+          <div className="col-span-1 text-center sm:text-left flex flex-col items-center sm:items-start">
+            <div className="w-32 sm:w-auto mb-4 sm:mb-0">
+              <Logo />
+            </div>
+            <p className="mt-4 text-sm text-white/60 max-w-xs mx-auto sm:mx-0">
+              A collective of four brilliant developers from RBU pushing the boundaries of what's possible in software development. We turn complex problems into elegant solutions.
+            </p>
           </div>
           
           {/* Footer links */}
           <FooterLinks />
           
           {/* Newsletter signup */}
-          <div className="col-span-1 md:col-span-1">
+          <div className="col-span-1 sm:col-span-2 md:col-span-1 text-center sm:text-left">
             <h3 className="text-white font-semibold mb-4">Stay Updated</h3>
             <p className="text-sm text-white/60 mb-4">Subscribe to our newsletter for updates and new features.</p>
-            <div className="flex flex-col sm:flex-row gap-2">
+            <div className="flex flex-col gap-2 max-w-xs mx-auto sm:mx-0">
               <input 
                 type="email" 
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your email" 
-                className="bg-white/5 border border-white/10 rounded-md px-4 py-2 text-sm text-white placeholder:text-white/40 focus:outline-none focus:ring-1 focus:ring-white/20"
+                className="w-full bg-white/5 border border-white/10 rounded-md px-4 py-2 text-sm text-white placeholder:text-white/40 focus:outline-none focus:ring-1 focus:ring-white/20"
               />
               <button 
                 onClick={handleSubscribe}
-                className="bg-white text-black font-medium text-sm px-4 py-2 rounded-md hover:bg-white/90 transition-colors"
+                className="w-full sm:w-auto bg-white text-black font-medium text-sm px-4 py-2 rounded-md hover:bg-white/90 transition-colors"
               >
                 Subscribe
               </button>
@@ -88,12 +91,12 @@ export default function Footer() {
         </div>
         
         {/* Bottom section with copyright and social icons */}
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-white/50 mb-4 md:mb-0">
+        <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p className="text-sm text-white/50 text-center sm:text-left order-2 sm:order-1">
             © {new Date().getFullYear()} Evil Geniuses(GDG). All rights reserved.
           </p>
           
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-6 order-1 sm:order-2">
             <FooterSocialIcons />
           </div>
         </div>

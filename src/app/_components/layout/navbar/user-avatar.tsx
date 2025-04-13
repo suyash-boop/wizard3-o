@@ -2,15 +2,7 @@
 import { authClient } from "@/lib/auth-client";
 import { useState, useRef, useEffect } from "react";
 import { cn } from "@/lib/utils";
-import {
-  ChevronDown,
-  User,
-  Settings,
-  LayoutDashboard,
-  LogOut,
-  Bell,
-  Shield,
-} from "lucide-react";
+import { ChevronDown, LogOut } from "lucide-react";
 
 interface UserAvatarProps {
   showName?: boolean;
@@ -34,33 +26,6 @@ export default function UserAvatar({
   const { data: session } = authClient.useSession();
 
   const menuItems = [
-    {
-      label: "Profile",
-      icon: <User className="w-4 h-4" />,
-      href: "/profile",
-    },
-    {
-      label: "Dashboard",
-      icon: <LayoutDashboard className="w-4 h-4" />,
-      href: "/dashboard",
-    },
-    {
-      type: "separator",
-    },
-    {
-      label: "Notifications",
-      icon: <Bell className="w-4 h-4" />,
-      href: "/notifications",
-      badge: "3",
-    },
-    {
-      label: "Settings",
-      icon: <Settings className="w-4 h-4" />,
-      href: "/settings",
-    },
-    {
-      type: "separator",
-    },
     {
       label: "Sign out",
       icon: <LogOut className="w-4 h-4" />,
@@ -118,45 +83,22 @@ export default function UserAvatar({
           <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent pointer-events-none" />
 
           {menuItems.map((item, index) => {
-            if (item.type === "separator") {
-              return (
-                <div key={index} className="my-1.5 border-t border-white/5" />
-              );
-            }
-
-            if ("href" in item || "onClick" in item) {
-              const Component = item.href ? "a" : "button";
-              return (
-                <Component
-                  key={index}
-                  href={item.href}
-                  onClick={item.onClick}
-                  className={cn(
-                    "relative flex items-center gap-3 w-full px-3 py-2",
-                    "text-sm transition-colors duration-200",
-                    "hover:bg-white/5",
-                    item.variant === "danger"
-                      ? "text-red-400 hover:text-red-300"
-                      : "text-white/90 hover:text-white"
-                  )}
-                >
-                  <span
-                    className={cn(
-                      "text-white/70",
-                      item.variant === "danger" ? "text-red-400/70" : ""
-                    )}
-                  >
-                    {item.icon}
-                  </span>
-                  <span>{item.label}</span>
-                  {"badge" in item && (
-                    <span className="ml-auto bg-white/10 text-white/90 text-xs px-1.5 py-0.5 rounded-md">
-                      {item.badge}
-                    </span>
-                  )}
-                </Component>
-              );
-            }
+            const Component = "button";
+            return (
+              <Component
+                key={index}
+                onClick={item.onClick}
+                className={cn(
+                  "relative flex items-center gap-3 w-full px-3 py-2",
+                  "text-sm transition-colors duration-200",
+                  "hover:bg-white/5",
+                  "text-red-400 hover:text-red-300"
+                )}
+              >
+                <span className="text-red-400/70">{item.icon}</span>
+                <span>{item.label}</span>
+              </Component>
+            );
           })}
         </div>
       )}

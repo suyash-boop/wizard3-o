@@ -9,10 +9,10 @@ export const navItems = [
   },
   {
     label: 'Contact',
-    path: '/projects',
+    path: '/contact',
   },
   {
-    label: 'Support',
-    path: '/contact',
+    label: 'About Us',
+    path: '/about-us',
   },
 ]

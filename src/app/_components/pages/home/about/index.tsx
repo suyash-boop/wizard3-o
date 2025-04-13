@@ -5,6 +5,7 @@ import { Badge } from '@/components/ui/badge'
 import { teamMembers } from '@/config/team-data'
 import TeamMemberBubble from '@/app/_components/pages/home/about/team-bubble'
 import ValuesSection from '@/app/_components/pages/home/about/values'
+import FAQSection from './faq'
 
 export default function AboutSection() {
   const [hoveredMember, setHoveredMember] = useState<number | null>(null);
@@ -69,6 +70,7 @@ export default function AboutSection() {
         </div>
         
         <ValuesSection />
+        <FAQSection /> {/* Added FAQ section here */}
       </div>
       
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent" />

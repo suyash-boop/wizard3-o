@@ -14,9 +14,9 @@ export const teamMembers: TeamMember[] = [
     id: 1,
     name: "Suyash",
     role: "Lead Developer",
-    bio: "Casts spells in TypeScript and summons perfect APIs with a flick of his wrist",
+    bio: "Casts spells in TypeScript and summons perfect APIs with a flick of his wrist. Mastered bit of every stack",
     image: "/suyash.jpg",
-    skills: ["Typescript", "MongoDB", "Next.js", "Node.js"],
+    skills: ["Typescript", "Next.js", "Node.js"],
     superpower: "Code Whisperer",
     catchphrase: "It's not a bug, it's an undocumented feature."
   },
@@ -24,30 +24,30 @@ export const teamMembers: TeamMember[] = [
     id: 2,
     name: "Devansh",
     role: "Frontend Developer",
-    bio: "Database wizard who once optimized a query so well, the database sent a thank you note. Speaks fluent SQL in his sleep.",
+    bio: "Animates ideas into life with React and wrangles CSS like it’s poetry. Thinks in components and speaks in smooth transitions.",
     image: "/devansh.jpg",
-    skills: ["Python", "Django", "PostgreSQL", "Docker"],
-    superpower: "Database Bender",
-    catchphrase: "SELECT * FROM solutions WHERE problem = current_issue;"
+    skills: ["Python", "Django", "PostgreSQL"],
+    superpower: "Component Major",
+    catchphrase: "Website without visitors is like a ship lost in the horizon"
   },
   {
     id: 3,
     name: "Aditya",
     role: "Competitive Programmer",
-    bio: "Taught an AI to write poetry, solve complex math, and make the perfect cup of coffee. The machines spare him when they take over.",
+    bio: "Algorithm artisan who treats LeetCode like a daily workout. Thinks in edge cases, breathes dynamic programming",
     image: "/aditya.jpg",
     skills: ["C", "JAVA", "HTML", "CSS"],
     superpower: "Algorithm Alchemist",
-    catchphrase: "My neural nets are deeper than your philosophy."
+    catchphrase: "Talk is cheap. Show me the code."
   },
   {
     id: 4,
     name: "Dhruv",
     role: "Frontend Developer",
-    bio: "Infrastructure maestro who deploys to production on Fridays and lives to tell the tale. Kubernetes clusters follow him like pets.",
+    bio: "Visual alchemist turning divs into delight. Lives for buttery micro-interactions, breathes flexbox, and speaks fluent animation.",
     image: "/dhruv.jpg",
     skills: ["HTML", "Tailwind", "Figma", "C"],
-    superpower: "Cloud Commander",
-    catchphrase: "Have you tried turning it off and on again?"
+    superpower: "UI Architect",
+    catchphrase: "Great web design without functionality is like a sports car with no engine."
   }
 ]

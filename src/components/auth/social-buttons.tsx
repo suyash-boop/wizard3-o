@@ -21,15 +21,7 @@ export function SocialButtons({ isLoading }: SocialButtonsProps) {
 
   return (
     <div className="space-y-3">
-      <Button
-        type="button"
-        className="w-full bg-white hover:bg-white/95 text-black font-medium border-0 rounded-md py-5 h-auto flex items-center justify-center gap-2 transition-all duration-300"
-        onClick={() => handleSocialLogin("google")}
-        disabled={isLoading}
-      >
-        <FaGoogle />
-        <span className="ml-1">Continue with Google</span>
-      </Button>
+     
       
       <Button
         type="button"

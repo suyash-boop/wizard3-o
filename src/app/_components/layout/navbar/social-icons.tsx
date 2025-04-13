@@ -5,7 +5,7 @@ export default function SocialIcons() {
   return (
     <>
       {/* Discord Icon */}
-      <a href="#" className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/5 rounded-full">
+      <a href="https://discord.gg/bxnAezT4fK" className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/5 rounded-full">
         <FaDiscord className="w-5 h-5" />
       </a>
       

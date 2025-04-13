@@ -4,7 +4,7 @@ import { FaDiscord, FaXTwitter, FaGithub, FaInstagram, FaLinkedin } from "react-
 export default function FooterSocialIcons() {
   return (
     <>
-      <a href="#" className="text-white/60 hover:text-white transition-colors">
+      <a href="https://discord.gg/bxnAezT4fK" className="text-white/60 hover:text-white transition-colors">
         <FaDiscord className="w-5 h-5" />
       </a>
       <a href="https://x.com/gdsc_rcoem" className="text-white/60 hover:text-white transition-colors">

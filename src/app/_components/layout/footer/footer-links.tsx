@@ -1,46 +1,27 @@
-'use client'
+import Image from 'next/image'
 
 export default function FooterLinks() {
-  const links = [
-    {
-      title: "Product",
-      items: [
-        { label: "Features", href: "#" },
-        { label: "Pricing", href: "#" },
-        { label: "Documentation", href: "#" },
-        { label: "Changelog", href: "#" }
-      ]
-    },
-    {
-      title: "Resources",
-      items: [
-        { label: "Blog", href: "#" },
-        { label: "Community", href: "#" },
-        { label: "Support", href: "#" },
-        { label: "API", href: "#" }
-      ]
-    }
-  ];
-
   return (
-    <>
-      {links.map((section, i) => (
-        <div key={i} className="col-span-1">
-          <h3 className="text-white font-semibold mb-4">{section.title}</h3>
-          <ul className="space-y-2">
-            {section.items.map((link, j) => (
-              <li key={j}>
-                <a 
-                  href={link.href} 
-                  className="text-sm text-white/60 hover:text-white transition-colors"
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </>
+    <div className="col-span-2 flex flex-col items-center text-center justify-center h-full">
+      <div className="relative w-[200px] h-[100px] mb-6">
+        <Image 
+          src="/gdginfo.png" 
+          alt="GDG Info"
+          fill
+          className="object-contain"
+          priority
+        />
+      </div>
+      <div className="text-white/60 text-sm space-y-1">
+        <p>Shri Ramdeobaba College of Engineering and Management,</p>
+        <p>Ramdeo Tekdi, Gittikhadan-Katol Road,Nagpur - 440013</p>
+        <a 
+          href="mailto:dsc.rknec@gmail.com" 
+          className="text-blue-400 hover:text-blue-300 transition-colors block mt-2"
+        >
+          dsc.rknec@gmail.com
+        </a>
+      </div>
+    </div>
   );
 }
