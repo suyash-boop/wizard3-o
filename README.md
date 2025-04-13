@@ -17,7 +17,7 @@ This isn't just a portfolio — it's where creativity meets clean code.
 
 ## 🔗 Live Demo
 
-Check out the live version here: [wizard3-o.vercel.app](wizard3-o.vercel.app)  
+Check out the live version here:  <a href="https://wizard3-o.vercel.app/home">EVIL GENIUSES</a> 
 
 ---
 
