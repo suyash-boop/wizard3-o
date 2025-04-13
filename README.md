@@ -95,7 +95,7 @@ This project is a blend of aesthetics and performance — built with cutting-edg
 ---
 
 ### 🎓 Mentored by GDG RBU
-
+### Special Mentions to [Ashutosh Pandey](https://github.com/Pandey-A),[Tanmay Gupta](https://github.com/tannmayygupta)
 ---
 
 ## 🤝 Contributions
