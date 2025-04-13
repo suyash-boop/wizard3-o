@@ -20,8 +20,7 @@ export const auth = betterAuth({
         },  
     },
     trustedOrigins: [
-        'http://localhost:3000',
-        'http://172.16.0.2:3000'
+        'https://wizard3-o.vercel.app/' 
     ],
     plugins: [openAPI(), nextCookies()]
 } satisfies BetterAuthOptions);
