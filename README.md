@@ -57,7 +57,7 @@ This project is a blend of aesthetics and performance — built with cutting-edg
 
 - 📨 **Contact Us Form**  
   Sleek and functional contact form for visitors to connect with us directly.  
-  The data of the contact form is sent to our Discord server via Webhooks: [Join Discord Server](https://discord.gg/bxnAezT4fK)
+  The data of the contact form is sent to our Discord server via Webhooks: [Discord Server](https://discord.gg/bxnAezT4fK)
 
 - 🧼 **Clean, Scalable Codebase**  
   Modular folder structure, reusable components, and clean logic — optimized for scalability and collaboration.
