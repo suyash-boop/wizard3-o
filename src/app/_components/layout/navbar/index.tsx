@@ -43,7 +43,7 @@ export function Navbar() {
     <header 
       className={`fixed w-full top-0 z-40 ${
         scrolled 
-          ? 'bg-blue-950/80 backdrop-blur-xl py-2'  // Changed from black to blue-950
+          ? 'bg-blue-950/80 backdrop-blur-xl py-2'
           : 'bg-transparent py-5'
       } transition-all duration-500 ease-out`}
     >
@@ -53,20 +53,21 @@ export function Navbar() {
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
-          <Logo />
+        <div className="flex items-center justify-between h-full">
+          <div className="flex-shrink-0">
+            <Logo />
+          </div>
           
-          {/* Desktop Navigation with hover indicators */}
-          <NavLinks 
-            activeSection={activeSection} 
-            setActiveSection={setActiveSection} 
-            isMenuOpen={isMenuOpen}
-            setIsMenuOpen={setIsMenuOpen}
-          />
+          <div className="flex-grow flex items-center justify-center">
+            <NavLinks 
+              activeSection={activeSection} 
+              setActiveSection={setActiveSection} 
+              isMenuOpen={isMenuOpen}
+              setIsMenuOpen={setIsMenuOpen}
+            />
+          </div>
           
-          {/* Actions with improved hover effects */}
-          <div className="flex items-center gap-3 md:gap-5">
-            {/* Social icons - hidden on smallest screens */}
+          <div className="flex-shrink-0 flex items-center gap-3 md:gap-5 justify-end">
             <div className="hidden sm:flex items-center gap-3 md:gap-5">
               <SocialIcons />
             </div>

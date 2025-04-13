@@ -40,9 +40,9 @@ export default function Hero() {
   // Updated team members data with Suyash
   const teamMembers = [
     { id: 1, name: "Suyash", role: "Lead Developer", image: "/suyash.jpg" },
-    { id: 2, name: "Sam", role: "Backend", image: "/devansh.jpg"},
-    { id: 3, name: "Jordan", role: "AI/ML", image: "/aditya.jpg" },
-    { id: 4, name: "Taylor", role: "DevOps", image: "/dhruv.jpg" },
+    { id: 2, name: "Devansh", role: "Frontend", image: "/devansh.jpg"},
+    { id: 3, name: "Aditya", role: "Competitive Programmer", image: "/aditya.jpg" },
+    { id: 4, name: "Dhruv", role: "Frontend Developer", image: "/dhruv.jpg" },
   ]
   
   return (
@@ -107,10 +107,10 @@ export default function Hero() {
             className="font-mono text-xs tracking-wider flex items-center gap-2 px-3 py-1.5 bg-black/50 backdrop-blur-sm border-blue-500/30 hover:border-blue-400/50 transition-all duration-300 shadow-lg shadow-blue-900/10"
           >
             <span className="text-blue-400">POWERED BY</span>
-            <span className="text-white font-semibold">GBU</span>
+            <span className="text-white font-semibold">GDG</span>
             <Image 
-              src="/icons/gbu.svg" 
-              alt="GBU Logo" 
+              src="/icons/gdg.svg" 
+              alt="GDG Logo" 
               width={24} 
               height={12}
               className="inline-block ml-1"
@@ -200,7 +200,7 @@ export default function Hero() {
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <p className="text-sm text-gray-500">Technologies we master</p>
           <div className="flex gap-6">
-            {['React', 'Node.js', 'Python', 'AI/ML'].map((tech, index) => (
+            {['React', 'Node.js', 'Typescript', 'Competitive Programming'].map((tech, index) => (
               <motion.div 
                 key={tech}
                 initial={{ y: 10, opacity: 0 }}

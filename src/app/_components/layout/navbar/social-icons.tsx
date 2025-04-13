@@ -10,7 +10,12 @@ export default function SocialIcons() {
       </a>
       
       {/* Twitter/X Icon */}
-      <a href="#" className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/5 rounded-full">
+      <a 
+        href="https://x.com/gdsc_rcoem" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="text-gray-400 hover:text-white transition-colors p-2 hover:bg-white/5 rounded-full"
+      >
         <FaXTwitter className="w-5 h-5" />
       </a>
     </>

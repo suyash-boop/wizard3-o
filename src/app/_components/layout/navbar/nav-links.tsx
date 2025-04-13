@@ -42,7 +42,7 @@ export default function NavLinks({ activeSection, setActiveSection, isMenuOpen, 
   };
   
   return (
-    <nav className="hidden md:flex items-center">
+    <nav className="hidden md:flex items-center absolute left-1/2 transform -translate-x-1/2">
       <div className="flex items-center space-x-1">
         {navItems.map((item) => {
           const isActive = activeSection === item.label;
@@ -56,7 +56,7 @@ export default function NavLinks({ activeSection, setActiveSection, isMenuOpen, 
               onMouseLeave={handleMouseLeave}
               className={`px-4 py-2 text-sm font-medium relative transition-all duration-300 rounded-md ${
                 isActive 
-                  ? 'text-white'  // Removed bg-blue-800/30 and shadow
+                  ? 'text-white'
                   : 'text-gray-300 hover:text-blue-200'
               }`}
               ref={(el: HTMLAnchorElement | null) => {
