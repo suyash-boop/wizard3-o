@@ -50,6 +50,9 @@ importers:
       next:
         specifier: 15.3.0
         version: 15.3.0(@babel/core@7.26.10)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      prisma:
+        specifier: ^6.6.0
+        version: 6.6.0(typescript@5.8.3)
       react:
         specifier: ^19.1.0
         version: 19.1.0
@@ -99,9 +102,6 @@ importers:
       eslint-config-next:
         specifier: 15.3.0
         version: 15.3.0(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3)
-      prisma:
-        specifier: ^6.6.0
-        version: 6.6.0(typescript@5.8.3)
       tailwindcss:
         specifier: ^4
         version: 4.1.3
