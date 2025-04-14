@@ -173,7 +173,7 @@ export default function ContactPage() {
             <div className="p-6 bg-gray-900/30 rounded-xl backdrop-blur-sm border border-blue-500/20">
               <div className="text-blue-400 mb-3">📧</div>
               <h3 className="text-white font-medium mb-1">Email</h3>
-              <p className="text-gray-400 text-sm">hello@example.com</p>
+              <p className="text-gray-400 text-sm">24padoles@rbunagpur.in</p>
             </div>
             <div className="p-6 bg-gray-900/30 rounded-xl backdrop-blur-sm border border-blue-500/20">
               <div className="text-blue-400 mb-3">📱</div>
