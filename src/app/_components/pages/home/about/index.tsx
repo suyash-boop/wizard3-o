@@ -11,7 +11,7 @@ export default function AboutSection() {
   const [hoveredMember, setHoveredMember] = useState<number | null>(null);
   
   return (
-    <section className="py-24 relative overflow-hidden bg-black">
+    <section id="about-section" className="py-24 relative overflow-hidden bg-black">
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-repeat opacity-10" />
         

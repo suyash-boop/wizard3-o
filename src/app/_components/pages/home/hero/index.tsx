@@ -175,9 +175,9 @@ export default function Hero() {
 
             <button
               onClick={() => {
-                const teamSection = document.getElementById('team-section');
-                if (teamSection) {
-                  teamSection.scrollIntoView({ behavior: 'smooth' });
+                const aboutSection = document.getElementById('about-section');
+                if (aboutSection) {
+                  aboutSection.scrollIntoView({ behavior: 'smooth' });
                 }
               }}
               className="inline-flex items-center justify-center px-6 py-3 border border-gray-700 text-base font-medium rounded-md text-white hover:bg-gray-900 transition-colors duration-300"
